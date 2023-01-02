@@ -1,0 +1,10 @@
+__pycache__
+*.hypothesis
+*.pytest
+*.mypycache
+venv
+.idea
+*.pyc
+*.pyo
+dist
+_build

@@ -1,0 +1,1297 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>pdxtra module &#8212; PDXtra  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "dark";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=796348d33e8b1d947c94" rel="stylesheet">
+<link href="_static/styles/bootstrap.css?digest=796348d33e8b1d947c94" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=796348d33e8b1d947c94" rel="stylesheet">
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=796348d33e8b1d947c94" rel="stylesheet">
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=796348d33e8b1d947c94">
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=796348d33e8b1d947c94">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'pdxtra';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="PDXtra" href="modules.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="docsearch:language" content="en">
+  </head>
+  
+  
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="180" data-default-mode="dark">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  
+  <input type="checkbox" class="sidebar-toggle" name="__primary" id="__primary">
+  <label class="overlay overlay-primary" for="__primary"></label>
+
+  
+  <input type="checkbox" class="sidebar-toggle" name="__secondary" id="__secondary">
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+      
+<form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+    </div>
+  </div>
+
+  
+  <nav class="bd-header navbar navbar-expand-lg bd-navbar" id="navbar-main"><div class="bd-header__inner bd-page-width">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+      <span class="fa-solid fa-bars"></span>
+  </label>
+  <div id="navbar-start">
+    
+    
+  
+
+
+<a class="navbar-brand logo" href="index.html">
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <img src="_static/logo-light.png" class="logo__image only-light" alt="Logo image">
+    <img src="_static/logo-dark.png" class="logo__image only-dark" alt="Logo image">
+  
+  
+</a>
+    
+  </div>
+
+  
+  <div class="col-lg-9 navbar-header-items">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <nav class="navbar-nav">
+    <p class="sidebar-header-items__title" role="heading" aria-level="1" aria-label="Site Navigation">
+        Site Navigation
+    </p>
+    <ul id="navbar-main-elements" class="navbar-nav">
+        
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="modules.html">
+                        PDXtra
+                      </a>
+                    </li>
+                
+    </ul>
+</nav>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      
+        <div class="navbar-end-item navbar-persistent--container">
+          
+<button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-toggle="tooltip">
+  <i class="fa-solid fa-magnifying-glass"></i>
+</button>
+        </div>
+      
+      
+      <div class="navbar-end-item">
+        <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+</button>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+
+
+  
+  
+    <div class="navbar-persistent--mobile">
+<button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-toggle="tooltip">
+  <i class="fa-solid fa-magnifying-glass"></i>
+</button>
+    </div>
+  
+
+  
+  <label class="sidebar-toggle secondary-toggle" for="__secondary">
+      <span class="fa-solid fa-outdent"></span>
+  </label>
+  
+
+</div>
+  </nav>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+      
+      <div class="navbar-center-item">
+        <nav class="navbar-nav">
+    <p class="sidebar-header-items__title" role="heading" aria-level="1" aria-label="Site Navigation">
+        Site Navigation
+    </p>
+    <ul id="navbar-main-elements" class="navbar-nav">
+        
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="modules.html">
+                        PDXtra
+                      </a>
+                    </li>
+                
+    </ul>
+</nav>
+      </div>
+      
+      </div>
+    
+
+    
+    
+    <div class="sidebar-header-items__end">
+      
+      <div class="navbar-end-item">
+        <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+</button>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+      </ul>
+      </div>
+      
+    </div>
+    
+  </div>
+
+  
+  <div class="sidebar-start-items sidebar-primary__section">
+    <div class="sidebar-start-items__item"><nav class="bd-links" id="bd-docs-nav" aria-label="Section navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">
+    Section Navigation
+  </p>
+  <div class="bd-toc-item navbar-nav">
+    <ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">pdxtra module</a></li>
+</ul>
+
+  </div>
+</nav>
+    </div>
+  </div>
+  
+
+  
+  <div class="sidebar-end-items sidebar-primary__section">
+    <div class="sidebar-end-items__item">
+    </div>
+  </div>
+
+  
+  <div id="rtd-footer-container"></div>
+
+      </div>
+      <main id="main-content" class="bd-main">
+        
+        
+        <div class="bd-content">
+          <div class="bd-article-container">
+            
+            <div class="bd-header-article">
+                
+            </div>
+            
+            
+            <article class="bd-article" role="main">
+              
+  <section id="module-pdxtra">
+<span id="pdxtra-module"></span><h1>pdxtra module<a class="headerlink" href="#module-pdxtra" title="Permalink to this heading">#</a></h1>
+<p>PDXtra is a data analysis library built on top of Pandas and geared toward
+time-series data analysis. The library offers subclasses of traditional
+Pandas <code class="docutils literal notranslate"><span class="pre">Series</span></code> and <code class="docutils literal notranslate"><span class="pre">DataFrame</span></code> objects which provide additional
+convenience methods for querying and manipulating data while retaining all
+of the functionality of the original Pandas API. Additionally, the library also
+provides <code class="docutils literal notranslate"><span class="pre">TimeSeries</span></code> and <code class="docutils literal notranslate"><span class="pre">TimeSeriesDataFrame</span></code> subclasses which are
+specifically designed to be used for time-series and financial data analysis.</p>
+<p>This distribution has been developed and tested on a standalone Python build
+and could–under rare circumstances–exibit unexpected behavior on standard
+CPython. Although no differences between the execution of code in the
+standalone build and normal CPython have been found during the process of
+development, I nevertheless wish to provide fair warning.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="pdxtra.DataFrame">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pdxtra.</span></span><span class="sig-name descname"><span class="pre">DataFrame</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pdxtra.DataFrame" title="Permalink to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">DataFrame</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="pdxtra.DataFrame.set_temp_index">
+<span class="sig-name descname"><span class="pre">set_temp_index</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">column_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pdxtra.DataFrame.set_temp_index" title="Permalink to this definition">#</a></dt>
+<dd><p>Context manager for temporarily switching the index column. The index
+column is automatically reverted back when the context manager exits.</p>
+<section id="parameters">
+<h2>Parameters<a class="headerlink" href="#parameters" title="Permalink to this heading">#</a></h2>
+<dl>
+<dt>column_name<span class="classifier"><cite>str</cite></span></dt><dd><p>The name of the column to set as the index column while inside
+the scope of the context manager.</p>
+</dd>
+</dl>
+</section>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pdxtra.DataFrame.vlookup">
+<span class="sig-name descname"><span class="pre">vlookup</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">values</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">column</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">method</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tolerance</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pdxtra.DataFrame.vlookup" title="Permalink to this definition">#</a></dt>
+<dd><p>Performs an Excel-like, veritcal lookup. In this case, the “v” in the
+function name has a double meaning. It stands for both “vertical”
+and “vector”, because unlike the typical vertical lookup in Excel,
+the function returns a vector of values (<code class="docutils literal notranslate"><span class="pre">numpy.array</span></code>) from the
+specified column, rather than a scalar. Can perform nearest match on
+the index column.</p>
+<section id="id1">
+<h2>Parameters<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
+<dl>
+<dt>values<span class="classifier"><cite>Sequence</cite></span></dt><dd><p>A sequence of values to search for in the index column.</p>
+</dd>
+<dt>column<span class="classifier"><cite>str</cite></span></dt><dd><p>The column name from which we wish to extract values whose indicies
+match the indicies found in the index column.</p>
+</dd>
+<dt>method<span class="classifier">{<cite>None</cite>, <cite>str</cite>}, default <cite>None</cite></span></dt><dd><p>Method used to determine whether or not a value is considered a
+match or near-match. From the Pandas documentation:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>[<code class="docutils literal notranslate"><span class="pre">None</span></code> (default)]: exact matches only.</p></li>
+<li><p>pad / ffill: find the previous index value if no exact match.</p></li>
+<li><p>backfill / bfill: use the next index value if no exact match.</p></li>
+<li><p>nearest: use the nearest index value if no exact match. Tied
+distances are broken by preferring the larger index value.</p></li>
+</ul>
+</div></blockquote>
+</dd>
+<dt>tolerance<span class="classifier">{<cite>numeric</cite>, <cite>date</cite>, <cite>datetime</cite>, <cite>None</cite>}, default <cite>None</cite></span></dt><dd><p>The maximum distance to search on either side of the index value
+when performing nearest match. If searching a series containing
+<code class="docutils literal notranslate"><span class="pre">date</span></code> or <code class="docutils literal notranslate"><span class="pre">datetime</span></code> objects, the user is responsible for
+providing the appropriate <code class="docutils literal notranslate"><span class="pre">timedelta</span></code> for computing differences
+between the index values and the values supplied in the function
+call. This argument is ignored when the method is <code class="docutils literal notranslate"><span class="pre">None</span></code>. See
+<code class="docutils literal notranslate"><span class="pre">pandas.Index.get_indexer</span></code> for further explanation.</p>
+</dd>
+</dl>
+</section>
+<section id="returns">
+<h2>Returns<a class="headerlink" href="#returns" title="Permalink to this heading">#</a></h2>
+<p>A 1-d Numpy array, which can be empty if no values are found.</p>
+</section>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pdxtra.DataFrame.xlookup">
+<span class="sig-name descname"><span class="pre">xlookup</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">row_idx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">column_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nearest_match</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tolerance</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lookback</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pdxtra.DataFrame.xlookup" title="Permalink to this definition">#</a></dt>
+<dd><p>Perform an Excel-style ‘xlookup’ by extracting the value(s) at the
+intersection of a set of (x,y) coordinates, where the Y coordinate
+is an index value and the X coordinate is a column name. Can perform
+nearest match on numerical and date indexes.</p>
+<section id="id2">
+<h2>Parameters<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
+<dl>
+<dt>row_idx<span class="classifier">{<cite>int</cite>, <cite>float</cite>, <cite>date</cite>, <cite>datetime</cite>}</span></dt><dd><p>The index value specifying which row is to be searched. When using
+‘nearest_match’ this value becomes the pivot value supplied to the
+‘nearest_to’ function.</p>
+</dd>
+<dt>column_name<span class="classifier"><cite>str</cite></span></dt><dd><p>The name of the column from which to extract the value.</p>
+</dd>
+<dt>nearest_match<span class="classifier"><cite>bool</cite>, default <cite>False</cite></span></dt><dd><p>If true, use the ‘nearest_to’ function to find the value of the
+index column which is closest to the ‘row_idx’ value.</p>
+</dd>
+<dt>tolerance<span class="classifier"><cite>int</cite>, default 5</span></dt><dd><p>The maximum distance to search on either side of the ‘row_idx’
+value when performing nearest match. If searching a series
+containing <code class="docutils literal notranslate"><span class="pre">date</span></code> or <code class="docutils literal notranslate"><span class="pre">datetime</span></code> objects, the user is
+responsible for providing the appropriate <code class="docutils literal notranslate"><span class="pre">timedelta</span></code> for
+computing differences between the index values and the value
+assigned to ‘row_idx’. This argument is ignored when
+‘nearest_match’ is false.</p>
+</dd>
+<dt>lookback<span class="classifier"><cite>bool</cite>, default <cite>True</cite></span></dt><dd><p>Whether or not to prioritize looking back vs. looking forwards
+along the sorted values of the <code class="docutils literal notranslate"><span class="pre">Series</span></code> when performing nearest
+match. This argument is ignored when ‘nearest_match’ is false.</p>
+</dd>
+</dl>
+</section>
+<section id="id3">
+<h2>Returns<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h2>
+<p>A value from the column being indexed, or <code class="docutils literal notranslate"><span class="pre">None</span></code> if no value is
+returned on nearest match.</p>
+</section>
+<section id="raises">
+<h2>Raises<a class="headerlink" href="#raises" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">KeyError</span></code> :</dt><dd><p>When the dataframe cannot be indexed using the coordinates
+provided.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">TypeError</span></code> :</dt><dd><p>When nearest match is performed on a series which contains values
+that do not support subraction between themselves and the other
+values contained in the <cite>Series</cite>, or when a comparison between
+differences and the <cite>tolerance</cite> is considered ambiguous.</p>
+</dd>
+</dl>
+</li>
+</ul>
+<section id="examples">
+<h3>Examples<a class="headerlink" href="#examples" title="Permalink to this heading">#</a></h3>
+<p>Find the value in column “integers” at index 2.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">pdxtra</span> <span class="k">as</span> <span class="nn">pdx</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">=</span> <span class="n">pdx</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s2">&quot;integers&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]})</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">df</span><span class="o">.</span><span class="n">xlookup</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="s2">&quot;integers&quot;</span><span class="p">)</span>
+<span class="go">3</span>
+</pre></div>
+</div>
+<p>Find the value in column “integers” where the index equals “d”.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">df</span><span class="o">.</span><span class="n">index</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="s2">&quot;c&quot;</span><span class="p">,</span> <span class="s2">&quot;d&quot;</span><span class="p">,</span> <span class="s2">&quot;e&quot;</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">df</span><span class="o">.</span><span class="n">xlookup</span><span class="p">(</span><span class="s2">&quot;d&quot;</span><span class="p">,</span> <span class="s2">&quot;integers&quot;</span><span class="p">)</span>
+<span class="go">4</span>
+</pre></div>
+</div>
+<p>Find the value in column “integers” where the index is nearest to 3.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">df</span><span class="o">.</span><span class="n">index</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">10</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">df</span><span class="o">.</span><span class="n">xlookup</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="s2">&quot;integers&quot;</span><span class="p">,</span> <span class="n">nearest_match</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="go">1</span>
+</pre></div>
+</div>
+<p>Find the value in column “integers” where the index is nearest to 3,
+but look forwards instead of backwards.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">df</span><span class="o">.</span><span class="n">xlookup</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="s2">&quot;integers&quot;</span><span class="p">,</span> <span class="n">nearest_match</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">lookback</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="go">2</span>
+</pre></div>
+</div>
+</section>
+</section>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="pdxtra.Series">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pdxtra.</span></span><span class="sig-name descname"><span class="pre">Series</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pdxtra.Series" title="Permalink to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Series</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="pdxtra.Series.nearest_to">
+<span class="sig-name descname"><span class="pre">nearest_to</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pivot</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tolerance</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lookback</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">float_method</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'fuzzy'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pdxtra.Series.nearest_to" title="Permalink to this definition">#</a></dt>
+<dd><p>Sort then search the series for a value which is nearest to the pivot
+value. If an exact match is found, then that match will be returned. All
+values in the series must support subtraction between themselves and the
+other values of the series.</p>
+<p>Can look forwards and backwards for matches, but does so hierarchically.
+For instance, a forward lookup will only return the forward value if the
+distance between it and the pivot value is less than the distance
+between any of the lower values and the pivot value. The same logic holds
+true for lookbacks. Any value above or below the pivot value, whose
+distance from the pivot is greater than the absolute value of the pivot
+plus the tolerance, will be excluded from the search.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function can be called directly on a <cite>Series</cite> object.</p>
+</div>
+<section id="id4">
+<h2>Parameters<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h2>
+<dl>
+<dt>series<span class="classifier"><cite>Series</cite></span></dt><dd><p>The Pandas series to be searched. When called as a method from the
+<cite>Series</cite> class, this argument is assigned to the class instance.</p>
+</dd>
+<dt>pivot<span class="classifier">{<cite>int</cite>, <cite>float</cite>, <cite>date</cite>, <cite>datetime</cite>}</span></dt><dd><p>The value on which to match. The search window (as defined by the
+tolerance) “pivots” around this value.</p>
+</dd>
+<dt>tolerance<span class="classifier">{<cite>int</cite>, <cite>float</cite>, <cite>timedelta</cite>}, default 5</span></dt><dd><p>The maximum distance to search on either side of the pivot. If
+searching a series containing <cite>date</cite> or <cite>datetime</cite> objects, the user is
+responsible for providing the appropriate <cite>timedelta</cite> for computing
+differences between the series values and the pivot value.</p>
+</dd>
+<dt>lookback<span class="classifier"><cite>bool</cite>, default <cite>True</cite></span></dt><dd><p>Whether or not to prioritize looking backwards vs. looking forwards
+along the sorted values of the series.</p>
+</dd>
+<dt>float_method<span class="classifier"><cite>str</cite> {<cite>fuzzy</cite>, <cite>precise</cite>}, default <cite>fuzzy</cite></span></dt><dd><p>Method for comparing floats when determining whether or not the
+difference between the pivot and a given value exceeds the bounds
+set by the tolerance.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Using precise will only increase the likelihood that the value
+returned falls within bounds. Neither of the two methods,
+fuzzy or precise, can guarantee perfect comparison of
+floating-point numbers. See the documentation for <code class="docutils literal notranslate"><span class="pre">numpy.isclose</span></code>
+for additional information on how this method compares
+floating-point numbers when precise is used. For an array of
+floating-point numbers significantly smaller than zero, precise
+may produce false-positive comparisons. For columns which do not
+contain floating-point numbers, the default (fuzzy) should always be
+used.</p>
+</div>
+</dd>
+</dl>
+</section>
+<section id="id5">
+<h2>Returns<a class="headerlink" href="#id5" title="Permalink to this heading">#</a></h2>
+<p>Either a value from the series or <code class="docutils literal notranslate"><span class="pre">None</span></code> if no match is found.</p>
+</section>
+<section id="id6">
+<h2>Raises<a class="headerlink" href="#id6" title="Permalink to this heading">#</a></h2>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">TypeError</span></code>:</dt><dd><p>One or more of the values does not support subtraction between itself
+and the other values in the series, or a comparison between differences
+and the tolerance is considered ambiguous.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">ValueError</span></code>:</dt><dd><p>The ‘float_method’ argument which was passed to the method is not
+one of the accepted strings.</p>
+</dd>
+</dl>
+<section id="id7">
+<h3>Examples<a class="headerlink" href="#id7" title="Permalink to this heading">#</a></h3>
+<p>Get the value from the list which is nearest to seven.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">pdxtra</span> <span class="k">as</span> <span class="nn">pdx</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">values</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pdx</span><span class="o">.</span><span class="n">nearest_to</span><span class="p">(</span><span class="n">values</span><span class="p">,</span> <span class="mi">7</span><span class="p">)</span>
+<span class="go">8</span>
+</pre></div>
+</div>
+<p>Get the value from the list which is nearest to three and use default
+<code class="docutils literal notranslate"><span class="pre">lookback=True</span></code> for tie breaking.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">values</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pdx</span><span class="o">.</span><span class="n">nearest_to</span><span class="p">(</span><span class="n">values</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="go">2</span>
+</pre></div>
+</div>
+<p>Get the value from the list which is nearst to three and look forward to
+break the tie.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pdx</span><span class="o">.</span><span class="n">nearest_to</span><span class="p">(</span><span class="n">values</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="n">lookback</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="go">4</span>
+</pre></div>
+</div>
+</section>
+</section>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pdxtra.Series.normalize">
+<span class="sig-name descname"><span class="pre">normalize</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">multiplier</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.5</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pdxtra.Series.normalize" title="Permalink to this definition">#</a></dt>
+<dd><p>Returns a series with outliers removed via the IQR method.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function can be called directly on a <code class="docutils literal notranslate"><span class="pre">DataFrame</span></code> object.</p>
+</div>
+<section id="id8">
+<h2>Parameters<a class="headerlink" href="#id8" title="Permalink to this heading">#</a></h2>
+<dl>
+<dt>multiplier<span class="classifier">{<cite>int</cite>, <cite>float</cite>} default 1.5</span></dt><dd><p>The value by which to multiply (extend) upper and lower bounds.</p>
+</dd>
+</dl>
+</section>
+<section id="id9">
+<h2>Returns<a class="headerlink" href="#id9" title="Permalink to this heading">#</a></h2>
+<p>A 1-d Numpy array.</p>
+<section id="id10">
+<h3>Examples<a class="headerlink" href="#id10" title="Permalink to this heading">#</a></h3>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">pdxtra</span> <span class="k">as</span> <span class="nn">pdx</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="n">Series</span><span class="p">([</span><span class="o">-</span><span class="mi">30</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">30</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="n">normalize</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">s</span>
+<span class="go">array([1, 2, 3])</span>
+</pre></div>
+</div>
+</section>
+</section>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pdxtra.Series.true_ema">
+<span class="sig-name descname"><span class="pre">true_ema</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">span</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pdxtra.Series.true_ema" title="Permalink to this definition">#</a></dt>
+<dd><p>Calculate the true N-day, exponential moving average of the <code class="docutils literal notranslate"><span class="pre">Series</span></code>.</p>
+<p>Calculations for exponential moving averages in Pandas start on the
+last position of the span which means that in order for a moving
+average with a span of N days to be a true N-day moving average, we
+need to add one to the minimum number of periods. This method produces
+an exponential moving average where ‘min_periods’ for the exponential
+moving window is always ‘span + 1’.</p>
+<section id="id11">
+<h2>Parameters<a class="headerlink" href="#id11" title="Permalink to this heading">#</a></h2>
+<dl>
+<dt>span<span class="classifier"><cite>int</cite></span></dt><dd><p>From the Pandas documentation: “Specify decay in terms of span.”
+See Pandas documentation on <code class="docutils literal notranslate"><span class="pre">pandas.ewm</span></code> for a full explanation.</p>
+</dd>
+</dl>
+</section>
+<section id="id12">
+<h2>Returns<a class="headerlink" href="#id12" title="Permalink to this heading">#</a></h2>
+<p>A subclass of Pandas <code class="docutils literal notranslate"><span class="pre">ExponentialMovingWindow</span></code>.</p>
+</section>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="pdxtra.Series.linearize">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">linearize</span></span><a class="headerlink" href="#pdxtra.Series.linearize" title="Permalink to this definition">#</a></dt>
+<dd><p>Returns the linear regression of a <code class="docutils literal notranslate"><span class="pre">Series</span></code>.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="pdxtra.TimeSeries">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pdxtra.</span></span><span class="sig-name descname"><span class="pre">TimeSeries</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pdxtra.TimeSeries" title="Permalink to this definition">#</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#pdxtra.Series" title="pdxtra.Series"><code class="xref py py-class docutils literal notranslate"><span class="pre">Series</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="pdxtra.TimeSeries.intersects">
+<span class="sig-name descname"><span class="pre">intersects</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pdxtra.TimeSeries.intersects" title="Permalink to this definition">#</a></dt>
+<dd><p>Returns the (x,y) coordinates for each point of intersection between
+the <code class="docutils literal notranslate"><span class="pre">Series</span></code> and the sequence supplied to the method. The coordinate
+vectors are returned as a 2-d Numpy array where index [0, :] contains
+the X values and index [1, :] contains the Y values for all points
+of intersection. Each pair for an array of N elements having index
+positions “i” is equal to the index [:, i].</p>
+<section id="id13">
+<h2>Parameters<a class="headerlink" href="#id13" title="Permalink to this heading">#</a></h2>
+<dl>
+<dt>other<span class="classifier"><cite>Sequence</cite></span></dt><dd><p>A sequence of values forming some finite curve that is expected to
+intersect with the curve represented by the series. This sequence
+must be the same length as the series itself.</p>
+</dd>
+</dl>
+</section>
+<section id="id14">
+<h2>Returns<a class="headerlink" href="#id14" title="Permalink to this heading">#</a></h2>
+<p>A 2-d Numpy array.</p>
+</section>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pdxtra.TimeSeries.macd">
+<span class="sig-name descname"><span class="pre">macd</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">short_span</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">12</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">long_span</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">26</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pdxtra.TimeSeries.macd" title="Permalink to this definition">#</a></dt>
+<dd><p>Converts the <code class="docutils literal notranslate"><span class="pre">Series</span></code> to moving average convergence-divergence.</p>
+<section id="id15">
+<h2>Parameters<a class="headerlink" href="#id15" title="Permalink to this heading">#</a></h2>
+<dl>
+<dt>short_span<span class="classifier"><cite>int</cite></span></dt><dd><p>The length of the short rolling window.</p>
+</dd>
+<dt>long_span<span class="classifier"><cite>int</cite></span></dt><dd><p>The length of the long rolling window.</p>
+</dd>
+</dl>
+</section>
+<section id="id16">
+<h2>Returns<a class="headerlink" href="#id16" title="Permalink to this heading">#</a></h2>
+<p>A PDXtra <code class="docutils literal notranslate"><span class="pre">TimeSeries</span></code> object.</p>
+</section>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pdxtra.TimeSeries.near_intersects">
+<span class="sig-name descname"><span class="pre">near_intersects</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pdxtra.TimeSeries.near_intersects" title="Permalink to this definition">#</a></dt>
+<dd><p>Returns the (x,y) coordinates for each point of intersection between
+the series and the sequence supplied to the method. The coordinate
+vectors are returned as a 2-d Numpy array where index [0, :] contains
+the X values and index [1, :] contains the Y values for all points
+of intersection. Each coordinate pair for an array of N elements
+having index positions “i” is equal to the index [:, i]. Every pair
+represents the nearest non-interpolated coordinates that preceed a
+point of intersection.</p>
+<section id="id17">
+<h2>Parameters<a class="headerlink" href="#id17" title="Permalink to this heading">#</a></h2>
+<dl>
+<dt>other<span class="classifier"><cite>Sequence</cite></span></dt><dd><p>A sequence of values forming some finite curve that is expected to
+intersect with the curve represented by the series. This sequence
+must be the same length as the series itself.</p>
+</dd>
+</dl>
+</section>
+<section id="id18">
+<h2>Returns<a class="headerlink" href="#id18" title="Permalink to this heading">#</a></h2>
+<p>A 2-d Numpy array.</p>
+</section>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pdxtra.TimeSeries.rsi">
+<span class="sig-name descname"><span class="pre">rsi</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">span</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">14</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pdxtra.TimeSeries.rsi" title="Permalink to this definition">#</a></dt>
+<dd><p>Converts the <code class="docutils literal notranslate"><span class="pre">Series</span></code> to relative strength index.</p>
+<section id="id19">
+<h2>Parameters<a class="headerlink" href="#id19" title="Permalink to this heading">#</a></h2>
+<dl>
+<dt>span<span class="classifier"><cite>int</cite></span></dt><dd><p>The length of the rolling window across the <code class="docutils literal notranslate"><span class="pre">Series</span></code>.</p>
+</dd>
+</dl>
+</section>
+<section id="id20">
+<h2>Returns<a class="headerlink" href="#id20" title="Permalink to this heading">#</a></h2>
+<p>A PDXtra <code class="docutils literal notranslate"><span class="pre">Series</span></code> object.</p>
+</section>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="pdxtra.TimeSeriesDataFrame">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pdxtra.</span></span><span class="sig-name descname"><span class="pre">TimeSeriesDataFrame</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pdxtra.TimeSeriesDataFrame" title="Permalink to this definition">#</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#pdxtra.DataFrame" title="pdxtra.DataFrame"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataFrame</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="pdxtra.TimeSeriesDataFrame.intersects">
+<span class="sig-name descname"><span class="pre">intersects</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">column_1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">column_2</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pdxtra.TimeSeriesDataFrame.intersects" title="Permalink to this definition">#</a></dt>
+<dd><p>Returns the (x,y) coordinates for each point of intersection of two
+finite curves as a 2-d array where index [0, :] contains the X values
+and index [1, :] contains the Y values for all points of intersection.
+Each pair for an array of N elements having index positions “i” is
+equal to the index [:, i].</p>
+<section id="id21">
+<h2>Parameters<a class="headerlink" href="#id21" title="Permalink to this heading">#</a></h2>
+<dl>
+<dt>column_1<span class="classifier"><cite>str</cite></span></dt><dd><p>The name of the first <code class="docutils literal notranslate"><span class="pre">Series</span></code> representing a finite curve.</p>
+</dd>
+<dt>column_2<span class="classifier"><cite>str</cite></span></dt><dd><p>The name of the second <code class="docutils literal notranslate"><span class="pre">Series</span></code> whose curve is expected to
+intersect with the first.</p>
+</dd>
+</dl>
+</section>
+<section id="id22">
+<h2>Returns<a class="headerlink" href="#id22" title="Permalink to this heading">#</a></h2>
+<p>A 2-d Numpy array.</p>
+</section>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pdxtra.TimeSeriesDataFrame.near_intersects">
+<span class="sig-name descname"><span class="pre">near_intersects</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">column_1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">column_2</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pdxtra.TimeSeriesDataFrame.near_intersects" title="Permalink to this definition">#</a></dt>
+<dd><p>Returns the (x,y) coordinates for each point of intersection of two
+finite curves as a 2-d Numpy array where index [0, :] contains the X
+values and index [1, :] contains the Y values for all points of
+intersection. Each coordinate pair for an array of N elements having
+index positions “i” is equal to the index [:, i]. Every pair represents
+the nearest non-interpolated coordinates that preceed a point of
+intersection.</p>
+<section id="id23">
+<h2>Parameters<a class="headerlink" href="#id23" title="Permalink to this heading">#</a></h2>
+<dl>
+<dt>column_1<span class="classifier"><cite>str</cite></span></dt><dd><p>The name of the first <code class="docutils literal notranslate"><span class="pre">Series</span></code> representing a finite curve.</p>
+</dd>
+<dt>column_2<span class="classifier"><cite>str</cite></span></dt><dd><p>The name of the second <code class="docutils literal notranslate"><span class="pre">Series</span></code> whose curve is expected to
+intersect with first.</p>
+</dd>
+</dl>
+</section>
+<section id="id24">
+<h2>Returns<a class="headerlink" href="#id24" title="Permalink to this heading">#</a></h2>
+<p>A 2-d Numpy array.</p>
+</section>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pdxtra.TimeSeriesDataFrame.obv">
+<span class="sig-name descname"><span class="pre">obv</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">close</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">volume</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pdxtra.TimeSeriesDataFrame.obv" title="Permalink to this definition">#</a></dt>
+<dd><p>Calculates the on-balance volume of the close and volume columns
+specified. Specifically designed for financial, time-series data
+analysis.</p>
+<section id="id25">
+<h2>Parameters<a class="headerlink" href="#id25" title="Permalink to this heading">#</a></h2>
+<dl>
+<dt>close<span class="classifier"><cite>str</cite></span></dt><dd><p>Name of the column which represents closing prices.</p>
+</dd>
+<dt>volume<span class="classifier"><cite>str</cite></span></dt><dd><p>Name of the column which represents the trading volume.</p>
+</dd>
+</dl>
+</section>
+<section id="id26">
+<h2>Returns<a class="headerlink" href="#id26" title="Permalink to this heading">#</a></h2>
+<p>A PDXtra <code class="docutils literal notranslate"><span class="pre">TimeSeries</span></code> object.</p>
+</section>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pdxtra.downcast_dataframe">
+<span class="sig-prename descclassname"><span class="pre">pdxtra.</span></span><span class="sig-name descname"><span class="pre">downcast_dataframe</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">integers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">floats</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pdxtra.downcast_dataframe" title="Permalink to this definition">#</a></dt>
+<dd><p>Downcast all numeric columns of the dataframe while retaining the sign
+of the values. The precision warnings associated with <code class="docutils literal notranslate"><span class="pre">pandas.to_numeric</span></code>
+also apply here.</p>
+<section id="id27">
+<h2>Parameters<a class="headerlink" href="#id27" title="Permalink to this heading">#</a></h2>
+<dl>
+<dt>df<span class="classifier"><cite>Dataframe</cite></span></dt><dd><p>The dataframe to be downcast.</p>
+</dd>
+<dt>integers<span class="classifier"><cite>bool</cite>, default <cite>True</cite></span></dt><dd><p>Whether or not to downcast integer columns.</p>
+</dd>
+<dt>floats<span class="classifier"><cite>bool</cite>, default <cite>True</cite></span></dt><dd><p>Whether or not to downcast floating-point columns.</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Due to the way in which <cite>pandas.select_dtypes</cite> selects columns,
+nullable Pandas types will automatically be downcast and cannot be
+selectively excluded when calling the function. Instead, exclude
+the nullable type columns and downcast the view or copy.</p>
+</div>
+</section>
+<section id="id28">
+<h2>Returns<a class="headerlink" href="#id28" title="Permalink to this heading">#</a></h2>
+<p>A Pandas <code class="docutils literal notranslate"><span class="pre">DataFrame</span></code>.</p>
+</section>
+<section id="id29">
+<h2>Raises<a class="headerlink" href="#id29" title="Permalink to this heading">#</a></h2>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">DowncastTypeError</span></code>:</dt><dd><p>When attempting to downcast an individual <code class="docutils literal notranslate"><span class="pre">Series</span></code>.</p>
+</dd>
+</dl>
+<section id="id30">
+<h3>Examples<a class="headerlink" href="#id30" title="Permalink to this heading">#</a></h3>
+<p>Downcast a dataframe containing an integer and a float column.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">pdxtra</span> <span class="k">as</span> <span class="nn">pdx</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">=</span> <span class="n">pdx</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s2">&quot;a&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="s2">&quot;b&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">,</span> <span class="mf">3.0</span><span class="p">]})</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">df</span><span class="o">.</span><span class="n">dtypes</span>
+<span class="go">a      int64</span>
+<span class="go">b    float64</span>
+<span class="go">dtype: object</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">=</span> <span class="n">pdx</span><span class="o">.</span><span class="n">downcast_dataframe</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">df</span><span class="o">.</span><span class="n">dtypes</span>
+<span class="go">a       int8</span>
+<span class="go">b    float32</span>
+<span class="go">dtype: object</span>
+</pre></div>
+</div>
+<p>Downcast only the integer columns.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">=</span> <span class="n">pdx</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s2">&quot;a&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="s2">&quot;b&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">,</span> <span class="mf">3.0</span><span class="p">]})</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">df</span><span class="o">.</span><span class="n">dtypes</span>
+<span class="go">a      int64</span>
+<span class="go">b    float64</span>
+<span class="go">dtype: object</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">=</span> <span class="n">pdx</span><span class="o">.</span><span class="n">downcast_dataframe</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">floats</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">df</span><span class="o">.</span><span class="n">dtypes</span>
+<span class="go">a       int8</span>
+<span class="go">b    float64</span>
+<span class="go">dtype: object</span>
+</pre></div>
+</div>
+</section>
+</section>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pdxtra.find_intersects">
+<span class="sig-prename descclassname"><span class="pre">pdxtra.</span></span><span class="sig-name descname"><span class="pre">find_intersects</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y2</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pdxtra.find_intersects" title="Permalink to this definition">#</a></dt>
+<dd><p>Returns the (x,y) coordinates for all points of intersection of two
+finite curves. Each array should represent the Y values of some curve
+whose X values match the values of the ‘x’ parameter.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pdxtra.find_near_intersects">
+<span class="sig-prename descclassname"><span class="pre">pdxtra.</span></span><span class="sig-name descname"><span class="pre">find_near_intersects</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y2</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pdxtra.find_near_intersects" title="Permalink to this definition">#</a></dt>
+<dd><p>Returns the (x,y) coordinates for all points that preceed a point of
+intersection of two finite curves. Each array should represent the Y
+values of some curve whose X values match the values of the ‘x’ parameter.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pdxtra.nearest_to">
+<span class="sig-prename descclassname"><span class="pre">pdxtra.</span></span><span class="sig-name descname"><span class="pre">nearest_to</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">series</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pivot</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tolerance</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lookback</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">float_method</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'fuzzy'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pdxtra.nearest_to" title="Permalink to this definition">#</a></dt>
+<dd><p>Sort then search the series for a value which is nearest to the pivot
+value. If an exact match is found, then that match will be returned. All
+values in the series must support subtraction between themselves and the
+other values of the series.</p>
+<p>Can look forwards and backwards for matches, but does so hierarchically.
+For instance, a forward lookup will only return the forward value if the
+distance between it and the pivot value is less than the distance
+between any of the lower values and the pivot value. The same logic holds
+true for lookbacks. Any value above or below the pivot value, whose
+distance from the pivot is greater than the absolute value of the pivot
+plus the tolerance, will be excluded from the search.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function can be called directly on a <cite>Series</cite> object.</p>
+</div>
+<section id="id31">
+<h2>Parameters<a class="headerlink" href="#id31" title="Permalink to this heading">#</a></h2>
+<dl>
+<dt>series<span class="classifier"><cite>Series</cite></span></dt><dd><p>The Pandas series to be searched. When called as a method from the
+<cite>Series</cite> class, this argument is assigned to the class instance.</p>
+</dd>
+<dt>pivot<span class="classifier">{<cite>int</cite>, <cite>float</cite>, <cite>date</cite>, <cite>datetime</cite>}</span></dt><dd><p>The value on which to match. The search window (as defined by the
+tolerance) “pivots” around this value.</p>
+</dd>
+<dt>tolerance<span class="classifier">{<cite>int</cite>, <cite>float</cite>, <cite>timedelta</cite>}, default 5</span></dt><dd><p>The maximum distance to search on either side of the pivot. If
+searching a series containing <cite>date</cite> or <cite>datetime</cite> objects, the user is
+responsible for providing the appropriate <cite>timedelta</cite> for computing
+differences between the series values and the pivot value.</p>
+</dd>
+<dt>lookback<span class="classifier"><cite>bool</cite>, default <cite>True</cite></span></dt><dd><p>Whether or not to prioritize looking backwards vs. looking forwards
+along the sorted values of the series.</p>
+</dd>
+<dt>float_method<span class="classifier"><cite>str</cite> {<cite>fuzzy</cite>, <cite>precise</cite>}, default <cite>fuzzy</cite></span></dt><dd><p>Method for comparing floats when determining whether or not the
+difference between the pivot and a given value exceeds the bounds
+set by the tolerance.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Using precise will only increase the likelihood that the value
+returned falls within bounds. Neither of the two methods,
+fuzzy or precise, can guarantee perfect comparison of
+floating-point numbers. See the documentation for <code class="docutils literal notranslate"><span class="pre">numpy.isclose</span></code>
+for additional information on how this method compares
+floating-point numbers when precise is used. For an array of
+floating-point numbers significantly smaller than zero, precise
+may produce false-positive comparisons. For columns which do not
+contain floating-point numbers, the default (fuzzy) should always be
+used.</p>
+</div>
+</dd>
+</dl>
+</section>
+<section id="id32">
+<h2>Returns<a class="headerlink" href="#id32" title="Permalink to this heading">#</a></h2>
+<p>Either a value from the series or <code class="docutils literal notranslate"><span class="pre">None</span></code> if no match is found.</p>
+</section>
+<section id="id33">
+<h2>Raises<a class="headerlink" href="#id33" title="Permalink to this heading">#</a></h2>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">TypeError</span></code>:</dt><dd><p>One or more of the values does not support subtraction between itself
+and the other values in the series, or a comparison between differences
+and the tolerance is considered ambiguous.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">ValueError</span></code>:</dt><dd><p>The ‘float_method’ argument which was passed to the method is not
+one of the accepted strings.</p>
+</dd>
+</dl>
+<section id="id34">
+<h3>Examples<a class="headerlink" href="#id34" title="Permalink to this heading">#</a></h3>
+<p>Get the value from the list which is nearest to seven.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">pdxtra</span> <span class="k">as</span> <span class="nn">pdx</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">values</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pdx</span><span class="o">.</span><span class="n">nearest_to</span><span class="p">(</span><span class="n">values</span><span class="p">,</span> <span class="mi">7</span><span class="p">)</span>
+<span class="go">8</span>
+</pre></div>
+</div>
+<p>Get the value from the list which is nearest to three and use default
+<code class="docutils literal notranslate"><span class="pre">lookback=True</span></code> for tie breaking.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">values</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pdx</span><span class="o">.</span><span class="n">nearest_to</span><span class="p">(</span><span class="n">values</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="go">2</span>
+</pre></div>
+</div>
+<p>Get the value from the list which is nearst to three and look forward to
+break the tie.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pdx</span><span class="o">.</span><span class="n">nearest_to</span><span class="p">(</span><span class="n">values</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="n">lookback</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="go">4</span>
+</pre></div>
+</div>
+</section>
+</section>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pdxtra.normalize">
+<span class="sig-prename descclassname"><span class="pre">pdxtra.</span></span><span class="sig-name descname"><span class="pre">normalize</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">series</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">multiplier</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.5</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pdxtra.normalize" title="Permalink to this definition">#</a></dt>
+<dd><p>Returns a series with outliers removed via the IQR method.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function can be called directly on a <code class="docutils literal notranslate"><span class="pre">DataFrame</span></code> object.</p>
+</div>
+<section id="id35">
+<h2>Parameters<a class="headerlink" href="#id35" title="Permalink to this heading">#</a></h2>
+<dl>
+<dt>multiplier<span class="classifier">{<cite>int</cite>, <cite>float</cite>} default 1.5</span></dt><dd><p>The value by which to multiply (extend) upper and lower bounds.</p>
+</dd>
+</dl>
+</section>
+<section id="id36">
+<h2>Returns<a class="headerlink" href="#id36" title="Permalink to this heading">#</a></h2>
+<p>A 1-d Numpy array.</p>
+<section id="id37">
+<h3>Examples<a class="headerlink" href="#id37" title="Permalink to this heading">#</a></h3>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">pdxtra</span> <span class="k">as</span> <span class="nn">pdx</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="n">Series</span><span class="p">([</span><span class="o">-</span><span class="mi">30</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">30</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="n">normalize</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">s</span>
+<span class="go">array([1, 2, 3])</span>
+</pre></div>
+</div>
+</section>
+</section>
+</dd></dl>
+
+</section>
+
+
+            </article>
+            
+            
+            
+            <footer class="bd-footer-article">
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+  <a class='left-prev' id="prev-link" href="modules.html" title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+          <p class="prev-next-subtitle">previous</p>
+          <p class="prev-next-title">PDXtra</p>
+      </div>
+  </a>
+</div>
+            </footer>
+            
+          </div>
+          
+          
+          
+            <div class="bd-sidebar-secondary bd-toc">
+              
+<div class="toc-item">
+  
+<div class="tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+</div>
+<nav id="bd-toc-nav" class="page-toc">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pdxtra.DataFrame">
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     DataFrame
+    </span>
+   </code>
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pdxtra.DataFrame.set_temp_index">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       DataFrame.set_temp_index()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pdxtra.DataFrame.vlookup">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       DataFrame.vlookup()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pdxtra.DataFrame.xlookup">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       DataFrame.xlookup()
+      </span>
+     </code>
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pdxtra.Series">
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     Series
+    </span>
+   </code>
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pdxtra.Series.nearest_to">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       Series.nearest_to()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pdxtra.Series.normalize">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       Series.normalize()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pdxtra.Series.true_ema">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       Series.true_ema()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pdxtra.Series.linearize">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       Series.linearize
+      </span>
+     </code>
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pdxtra.TimeSeries">
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     TimeSeries
+    </span>
+   </code>
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pdxtra.TimeSeries.intersects">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       TimeSeries.intersects()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pdxtra.TimeSeries.macd">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       TimeSeries.macd()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pdxtra.TimeSeries.near_intersects">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       TimeSeries.near_intersects()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pdxtra.TimeSeries.rsi">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       TimeSeries.rsi()
+      </span>
+     </code>
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pdxtra.TimeSeriesDataFrame">
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     TimeSeriesDataFrame
+    </span>
+   </code>
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pdxtra.TimeSeriesDataFrame.intersects">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       TimeSeriesDataFrame.intersects()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pdxtra.TimeSeriesDataFrame.near_intersects">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       TimeSeriesDataFrame.near_intersects()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pdxtra.TimeSeriesDataFrame.obv">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       TimeSeriesDataFrame.obv()
+      </span>
+     </code>
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pdxtra.downcast_dataframe">
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     downcast_dataframe()
+    </span>
+   </code>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pdxtra.find_intersects">
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     find_intersects()
+    </span>
+   </code>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pdxtra.find_near_intersects">
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     find_near_intersects()
+    </span>
+   </code>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pdxtra.nearest_to">
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     nearest_to()
+    </span>
+   </code>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pdxtra.normalize">
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     normalize()
+    </span>
+   </code>
+  </a>
+ </li>
+</ul>
+
+</nav>
+</div>
+
+<div class="toc-item">
+  
+<div id="searchbox"></div>
+</div>
+
+<div class="toc-item">
+  
+</div>
+
+<div class="toc-item">
+  
+<div class="tocsection sourcelink">
+    <a href="_sources/pdxtra.rst.txt">
+        <i class="fa-solid fa-file-lines"></i> Show Source
+    </a>
+</div>
+
+</div>
+
+            </div>
+          
+          
+        </div>
+        <footer class="bd-footer-content">
+          <div class="bd-footer-content__inner">
+            
+          </div>
+        </footer>
+        
+      </main>
+    </div>
+  </div>
+
+  
+    
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=796348d33e8b1d947c94"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=796348d33e8b1d947c94"></script>
+
+  <footer class="bd-footer"><div class="bd-footer__inner container">
+  
+  <div class="footer-item">
+    
+<p class="copyright">
+
+    &copy; Copyright 2022, Ben Ohling.<br>
+
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    <p class="theme-version">
+    Built with the
+    <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">
+        PyData Sphinx Theme
+    </a>
+    0.12.0.
+</p>
+  </div>
+  
+  <div class="footer-item">
+    
+<p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 6.0.0.<br>
+</p>
+
+  </div>
+  
+</div>
+  </footer>
+  </body>
+</html>
