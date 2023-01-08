@@ -27,6 +27,8 @@ author = 'Ben Ohling'
 extensions = [
     "sphinx.ext.autodoc",
     "sphinx.ext.coverage",
+    # The PyData theme seems to accomplish what the napoleon extension
+    # attempts to accomplish but does a better job at it.
     # "sphinx.ext.napoleon",
     "sphinx.ext.doctest",
 ]
