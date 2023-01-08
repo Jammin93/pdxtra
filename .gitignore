@@ -8,3 +8,4 @@ venv
 *.pyo
 dist
 _build
+*.egg-info
