@@ -596,16 +596,12 @@ class DataFrame(pd.DataFrame):
         -------
         A 1-d Numpy array, which can be empty if no values are found.
         """
-        if method is None:
-            lookup = self.iloc[values][column]
-        else:
-            mask = self.index.get_indexer(
-                values,
-                tolerance=tolerance,
-                method=method,
-            )
-            lookup = self.iloc[mask[np.nonzero(mask >= 0)]][column]
-
+        mask = self.index.get_indexer(
+            values,
+            tolerance=tolerance,
+            method=method,
+        )
+        lookup = self.iloc[mask[np.nonzero(mask >= 0)]][column]
         return lookup
 
 
