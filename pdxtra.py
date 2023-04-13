@@ -558,7 +558,9 @@ class DataFrame(pd.DataFrame):
             tolerance: Optional[
                 Union[int, float, date, datetime, type(None)]
             ] = None,
-            ) -> Series:
+            fillna: Any = np.nan,
+            filter_nan: bool = False,
+            ) -> NDArray:
         """
         Performs an Excel-like, veritcal lookup. In this case, the "v" in the
         function name has a double meaning. It stands for both "vertical"
@@ -591,6 +593,12 @@ class DataFrame(pd.DataFrame):
             between the index values and the values supplied in the function
             call. This argument is ignored when the method is ``None``. See
             ``pandas.Index.get_indexer`` for further explanation.
+        fillna : `Any`, default `np.nan`
+            Fill missing values with the value specified. Has no effect if
+            ``filter_nan`` is ``True``.
+        filter_nan : `bool`, default `False`
+            Filter out values which whose corresponding index value is not
+            found in the index.
 
         Returns
         -------
@@ -601,7 +609,15 @@ class DataFrame(pd.DataFrame):
             tolerance=tolerance,
             method=method,
         )
-        lookup = self.iloc[mask[np.nonzero(mask >= 0)]][column]
+        if filter_nan:
+            lookup = self.loc[mask[np.nonzero(mask >= 0)]][column].values
+        else:
+            lookup = np.where(
+                mask != -1,
+                self.iloc[mask][column].values,
+                fillna,
+            )
+
         return lookup
 
 
@@ -630,7 +646,6 @@ class TimeSeries(Series):
         close_delta = self.diff()
         up = close_delta.clip(lower=0)
         down = -1 * close_delta.clip(upper=0)
-
         return up.true_ema(span) / down.true_ema(span)
 
     def macd(self, short_span: int = 12, long_span: int = 26) -> Series:

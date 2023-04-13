@@ -5,7 +5,7 @@ src = Path(__file__).parent
 
 setup(
     name="pdxtra",
-    version="1.0.1",
+    version="1.0.2",
     description="Pandas with time-series data analysis in mind.",
     long_description=(src/"README.rst").read_text(),
     packages=find_packages(),
